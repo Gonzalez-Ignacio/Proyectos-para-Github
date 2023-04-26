@@ -20,7 +20,7 @@
             <div class="card-header text-center text-dark">
               Pomodoro
             </div>
-            <div class="card-body">
+            <div class="card-body" id="color-Card">
 
                 <!-- Tiempo faltante y cantidad de Ciclos -->
                 <div class="row text-white mb-4">
@@ -28,7 +28,7 @@
                         <h1 class="card-title" id="temporizador"> 25:00 </h1>
                     </div>
                     <div class="col col-md-4 text-end ">
-                        <label for="numero" class="text-center"> Ciclo <br> Pomodoro </label> <br>   
+                        <label for="numero" class="text-center" id="cantidad-Ciclos"> Ciclo <br> Pomodoro </label> <br>   
                         <input type="number" name="ciclo" id="ciclo" placeholder="ciclo" class="bg-danger form-control-sm" min="0" max="10">
                     </div>
                 </div>
@@ -36,7 +36,7 @@
 
                 <!-- Boton para iniciar -->
                 <div class="row mb-4">
-                    <div class="col col-md-12 text-center ">
+                    <div class="col col-md-12 text-center" id="btn-Iniciar">
                         <button class="btn btn-danger shadow btn-outline-dark btn-lg  ">Iniciar</button>
                     </div>
                 </div>
@@ -45,23 +45,23 @@
                 <div class="row text-white">
                     <div class="col">
                         <label for="tiempoTrabajado" class="text-center"> Tiempo <br> Trabajado </label> <br>   
-                        <input type="number" name="tiempoTrabajado" id="tiempoTrabajado" placeholder="tiempo del Trabajo" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="tiempoTrabajado" id="tiempo-Trabajado" placeholder="tiempo del Trabajo" class="bg-danger form-control-sm" min="0" max="60">
                     </div>
 
                     <div class="col">
                         <label for="tiempoDescanso" class="text-center"> Tiempo <br> Descanso </label> <br>   
-                        <input type="number" name="tiempoDescanso" id="tiempoDescanso" placeholder="tiempo del Descanso" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="tiempoDescanso" id="tiempo-Descanso" placeholder="tiempo del Descanso" class="bg-danger form-control-sm" min="0" max="60">
                     </div>
 
                     <div class="col">
                         <label for="descansoLargo" class="text-center"> Descanso <br> Largo </label> <br>   
-                        <input type="number" name="descansoLargo" id="descansoLargo" placeholder="Descanso Largo" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="descansoLargo" id="descanso-Largo" placeholder="Descanso Largo" class="bg-danger form-control-sm" min="0" max="60">
                     </div>
                 </div>
 
             </div>
 
-            <div class="card-footer text-body-secondary text-center">
+            <div class="card-footer text-body-secondary text-center" id="cambiar-Texto">
               <p> Elige los tiempos de trabjo y descanso</p>
             </div>
         </div>
