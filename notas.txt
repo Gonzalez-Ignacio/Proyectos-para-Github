@@ -1,0 +1,19 @@
+const tiempoTotal = 25 * 60; // 25 minutos en segundos
+let tiempoRestante = tiempoTotal;
+
+const contador = setInterval(() => {
+  // Actualizar el contador cada segundo
+  const minutos = Math.floor(tiempoRestante / 60);
+  const segundos = tiempoRestante % 60;
+  console.log(`${minutos}:${segundos < 10 ? '0' : ''}${segundos}`);
+
+  // Restar un segundo del tiempo restante
+  tiempoRestante--;
+
+  // Si se llega a cero, detener el contador
+  if (tiempoRestante < 0) {
+    clearInterval(contador);
+    console.log("Fin del contador");
+  }
+}, 1000);
+

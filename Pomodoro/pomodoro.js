@@ -9,13 +9,15 @@ const Boton = document.getElementById('btn-Iniciar');
 let intervalo = 1000
 
 Boton.addEventListener('click', function() {
-      let asdf = document.getElementById('tiempoTrabajado').value;
-      console.log(asdf)
+      let tiempoTotal = document.getElementById('tiempoTrabajado').value * 60 + document.getElementById('tiempoTrabajado').value * 60;
+      let tiempoRestante = tiempoTotal
+
       setInterval(
         function(){
-          Temporizador.innerText=asdf;
-          asdf--;
-
+          const minutos = Math.floor(tiempoRestante/60)
+          const segundos = tiempoRestante % 60
+          Temporizador.innerText=`${minutos}:${segundos}`
+          tiempoRestante--;
         },
         intervalo
         )
