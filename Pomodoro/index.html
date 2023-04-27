@@ -16,11 +16,11 @@
 
     <div class="container">
 
-        <div class="card position-absolute top-50 start-50 translate-middle bg-danger">
+        <div class="card position-absolute top-50 start-50 translate-middle cardColor" id="colorCard">
             <div class="card-header text-center text-dark">
               Pomodoro
             </div>
-            <div class="card-body" id="color-Card">
+            <div class="card-body">
 
                 <!-- Tiempo faltante y cantidad de Ciclos -->
                 <div class="row text-white mb-4">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col col-md-4 text-end ">
                         <label for="numero" class="text-center" id="cantidad-Ciclos"> Ciclo <br> Pomodoro </label> <br>   
-                        <input type="number" name="ciclo" id="ciclo" placeholder="ciclo" class="bg-danger form-control-sm" min="0" max="10">
+                        <input type="number" name="ciclo" id="ciclo" placeholder="ciclo" class="colorDentro form-control-sm" min="0" max="10">
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                 <!-- Boton para iniciar -->
                 <div class="row mb-4">
                     <div class="col col-md-12 text-center" id="btn-Iniciar">
-                        <button class="btn btn-danger shadow btn-outline-dark btn-lg  ">Iniciar</button>
+                        <button class="btn shadow btn-outline-dark btn-lg colorDentro ">Iniciar</button>
                     </div>
                 </div>
 
@@ -45,17 +45,17 @@
                 <div class="row text-white">
                     <div class="col">
                         <label for="tiempoTrabajado" class="text-center"> Tiempo <br> Trabajado </label> <br>   
-                        <input type="number" name="tiempoTrabajado" id="tiempoTrabajado" placeholder="tiempo del Trabajo" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="tiempoTrabajado" id="tiempoTrabajado" placeholder="tiempo del Trabajo" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
 
                     <div class="col">
                         <label for="tiempoDescanso" class="text-center"> Tiempo <br> Descanso </label> <br>   
-                        <input type="number" name="tiempoDescanso" id="tiempoDescanso" placeholder="tiempo del Descanso" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="tiempoDescanso" id="tiempoDescanso" placeholder="tiempo del Descanso" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
 
                     <div class="col">
                         <label for="descansoLargo" class="text-center"> Descanso <br> Largo </label> <br>   
-                        <input type="number" name="descansoLargo" id="descansoLargo" placeholder="Descanso Largo" class="bg-danger form-control-sm" min="0" max="60">
+                        <input type="number" name="descansoLargo" id="descansoLargo" placeholder="Descanso Largo" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
                 </div>
 
