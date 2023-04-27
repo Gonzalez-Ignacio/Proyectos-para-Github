@@ -16,18 +16,18 @@
 
     <div class="container">
 
-        <div class="card position-absolute top-50 start-50 translate-middle cardColor" id="colorCard">
+        <div class="card position-absolute top-50 start-50 translate-middle cardColor px-1" id="colorCard">
             <div class="card-header text-center text-dark">
               Pomodoro
             </div>
-            <div class="card-body">
+            <div class="card-body px-0">
 
                 <!-- Tiempo faltante y cantidad de Ciclos -->
                 <div class="row text-white mb-4">
                     <div class="col col-md-8 text-end">
                         <h1 class="card-title" id="temporizador"> 25:00 </h1>
                     </div>
-                    <div class="col col-md-4 text-end ">
+                    <div class="col col-md-4 text-center ">
                         <label for="numero" class="text-center" id="cantidad-Ciclos"> Ciclo <br> Pomodoro </label> <br>   
                         <input type="number" name="ciclo" id="ciclo" placeholder="ciclo" class="colorDentro form-control-sm" min="0" max="10">
                     </div>
@@ -36,30 +36,30 @@
 
                 <!-- Boton para iniciar -->
                 <div class="row mb-4 botones">
-                    <div class="col col-md-4" id="btn-Pausar">
-                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" disabled> <i class="bi bi-pause-circle-fill"> </i> </button>
+                    <div class="col col-md-4 text-end">
+                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" id="btn-Pausar" disabled> <i class="bi bi-pause-circle-fill"> </i> </button>
                     </div>
-                    <div class="col col-md-4" id="btn-Iniciar">
-                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" disabled=false>Iniciar</button>
+                    <div class="col col-md-4" >
+                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" id="btn-Iniciar">Iniciar</button>
                     </div>
-                    <div class="col col-md-4" id="btn-Reiniciar">
-                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" disabled> <i class="bi bi-arrow-clockwise"> </i> </button>
+                    <div class="col col-md-4" >
+                        <button class="btn shadow btn-outline-dark btn-lg colorDentro" id="btn-Reiniciar" disabled> <i class="bi bi-arrow-clockwise"> </i> </button>
                     </div>
                 </div>
 
                 <!-- Seleccionar: Cantidad de Tiempo de Trabajo, de Descanso y Descanso Largo -->
-                <div class="row text-white">
-                    <div class="col">
+                <div class="row text-white ">
+                    <div class="col ps-3">
                         <label for="tiempoTrabajado" class="text-center"> Tiempo <br> Trabajado </label> <br>   
                         <input type="number" name="tiempoTrabajado" id="tiempoTrabajado" placeholder="tiempo del Trabajo" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
 
-                    <div class="col">
+                    <div class="col ">
                         <label for="tiempoDescanso" class="text-center"> Tiempo <br> Descanso </label> <br>   
                         <input type="number" name="tiempoDescanso" id="tiempoDescanso" placeholder="tiempo del Descanso" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
 
-                    <div class="col">
+                    <div class="col ">
                         <label for="descansoLargo" class="text-center"> Descanso <br> Largo </label> <br>   
                         <input type="number" name="descansoLargo" id="descansoLargo" placeholder="Descanso Largo" class=" form-control-sm colorDentro" min="0" max="60">
                     </div>
