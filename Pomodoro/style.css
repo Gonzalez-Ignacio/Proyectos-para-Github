@@ -9,3 +9,7 @@ body {
 .colorDentro{
     background-color: rgb(182, 0, 0)
 }
+
+.botones {
+    padding: 0;
+}
