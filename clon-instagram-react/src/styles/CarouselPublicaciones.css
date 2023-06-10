@@ -1,0 +1,6 @@
+.imagen-carousel{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}

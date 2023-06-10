@@ -1,0 +1,14 @@
+.contenedor-publicaciones {
+    margin-top: 50px;
+}
+
+
+.perfil-publicacion {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.nombre-publicacion {
+  font-size: 12px;
+  font-weight: bolder;
+}
