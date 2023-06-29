@@ -14,7 +14,7 @@ function App() {
     <div>
       <Nav />
       <Feed />
-      {/* <Historia /> */}
+      {/* <Historias /> */}
     </div>
   )
 }
